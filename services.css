@@ -1,0 +1,221 @@
+#d1
+{
+width:100%;
+top:0px;
+left:0;
+height:280px;
+position:absolute;
+    background-color:#5799e5;
+
+}
+#img
+{
+    top:0px;
+    left:0;
+position:absolute;
+    opacity:10;
+
+}
+
+#d2
+{
+height:30px;
+width:140px;
+background-color:#4093db;
+border-radius:10px 50px 0 10px;
+top:200px;
+position:absolute;
+box-shadow:10px 10px 10px #999;
+text-align:center;
+padding:20px;     /*paddind bdane aur height km krne se HOME center me aa gya */
+font-size:28px;
+left:80px;
+text-align:center;
+opacity:.9;
+color:fff;
+margin-top:0px;
+}
+
+#d3
+{
+height:30px;
+width:140px;
+background-color:#4093db;
+border-radius:10px 50px 0 10px;
+top:200px;
+position:absolute;
+box-shadow:10px 10px 10px #999;
+text-align:center;
+padding:20px;     /*paddind bdane aur height km krne se HOME center me aa gya */
+font-size:28px;
+left:280px;
+text-align:center;
+opacity:.9;
+color:fff;
+margin-top:0px;
+}
+#d4
+{
+height:30px;
+width:140px;
+background-color:#4093db;
+border-radius:10px 50px 0 10px;
+top:200px;
+position:absolute;
+box-shadow:10px 10px 10px #999;
+text-align:center;
+padding:20px;     /*paddind bdane aur height km krne se HOME center me aa gya */
+font-size:28px;
+left:480px;
+text-align:center;
+opacity:.9;
+color:fff;
+margin-top:0px;
+}
+#d5
+{
+height:30px;
+width:140px;
+background-color:#4093db;
+border-radius:10px 50px 0 10px;
+top:200px;
+position:absolute;
+box-shadow:10px 10px 10px #999;
+text-align:center;
+padding:20px;     /*paddind bdane aur height km krne se HOME center me aa gya */
+font-size:28px;
+left:679px;
+text-align:center;
+opacity:.9;
+color:fff;
+margin-top:0px;
+}
+#d6
+{
+height:30px;
+width:140px;
+background-color:#4093db;
+border-radius:10px 50px 0 10px;
+top:200px;
+position:absolute;
+box-shadow:10px 10px 10px #999;
+text-align:center;
+padding:20px;     /*paddind bdane aur height km krne se HOME center me aa gya */
+font-size:28px;
+left:880px;
+text-align:center;
+opacity:.9;
+color:fff;
+margin-top:0px;
+}
+#d7
+{
+height:30px;
+width:140px;
+background-color:#4093db;
+border-radius:10px 50px 0 10px;
+top:200px;
+position:absolute;
+box-shadow:10px 10px 10px #999;
+text-align:center;
+padding:20px;     /*paddind bdane aur height km krne se HOME center me aa gya */
+font-size:28px;
+left:1080px;
+text-align:center;
+opacity:.9;
+color:fff;
+margin-top:0px;
+}
+#d11
+{
+position:absolute;
+top:310;
+left:30px;
+width:400px;
+height:240px;
+background-color:#f0f0f0;
+}
+#d14
+{
+position:absolute;
+top:550;
+left:30px;
+width:400px;
+height:320px;
+background-color:#ffffff;
+
+}
+#f
+{
+position:relative;
+margin-left:120px;
+color:#4894cc;
+font-size:13px;
+font-family:arial black;
+margin-left:20px;
+
+}
+#d12
+{
+position:absolute;
+top:990px;
+left:30px;
+width:100%;
+height:85px;
+background-color:#a5b3c9;
+}
+#d13
+{
+position:absolute;
+top:310px;
+left:600px;
+width:500px;
+height:470px;
+background-color:#c0c0c0;
+padding:100px;
+}
+#p11
+{
+
+}
+#img1
+{
+position:absolute;
+top:310;
+left:30px;
+width:400px;
+height:240px;
+background-color:#f0f0f0;
+opacity:.5px;
+}
+
+#d2:hover
+{
+    background-color:orange;
+box-shadow:none;
+}
+#d3:hover
+{
+    background-color:orange;
+box-shadow:none;
+}
+#d4:hover
+{
+    background-color:orange;
+box-shadow:none;
+}
+#d5:hover
+{
+    background-color:orange;
+box-shadow:none;
+}
+#d6:hover
+{
+    background-color:orange;
+box-shadow:none;
+}
+#d7:hover
+{
+    background-color:orange;
+box-shadow:none;
+}

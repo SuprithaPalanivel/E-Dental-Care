@@ -1,0 +1,54 @@
+#d2, #d3, #d4, #d5, #d6, #d7 {
+  height: 30px;
+  width: 140px;
+  background-color: #4093db;
+  border-radius: 10px 50px 0 10px;
+  position: absolute;
+  box-shadow: 10px 10px 10px #999;
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  color: #fff;
+  margin-top: 0px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#d2 {
+  left: 80px;
+  top: 0;
+}
+
+#d3 {
+  left: 280px;
+  top: 0;
+}
+
+#d4 {
+  left: 480px;
+  top: 0;
+}
+
+#d5 {
+  left: 680px;
+  top: 0;
+}
+
+#d6 {
+  left: 880px;
+  top: 0;
+}
+
+#d7 {
+  left: 1080px;
+  top: 0;
+}
+
+#d2:hover, #d3:hover, #d4:hover, #d5:hover, #d6:hover, #d7:hover {
+  background-color: orange;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+#d2, #d3, #d4, #d5, #d6, #d7:hover {
+  transform: translateY(-5px); /* Add a slight lift on hover */
+}

@@ -1,0 +1,187 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="consultant.css">
+<script type="text/javascript">
+function fun1()
+{
+var n1,nc1;
+nc1=/^[a-zA-Z ]+$/;
+n1=document.getElementById("f1");
+if(!n1.value.match(nc1))
+{
+   document.getElementById("span1").innerHTML="*Enter valid name";
+}
+}
+
+function fun3()
+{
+var n3,nc3;
+nc3=/^[0-9a-zA-Z._ ]+\@[a-zA-Z]+\.[a-zA-Z.]{2,6}$/;
+n3=document.getElementById("f3");
+if(!n3.value.match(nc3))
+{
+   document.getElementById("span3").innerHTML="*Invalid Email ID";
+}
+}
+function fun4()
+{
+var n4,nc4;
+nc4=/^[0-9]{10,10}$/;
+n4=document.getElementById("f4");
+if(!n4.value.match(nc4))
+{
+   document.getElementById("span4").innerHTML="*Invalid mobile no";
+}
+}
+
+function bill()
+{
+var n11,nc11;
+nc11=/^[a-zA-Z ]+$/;
+n11=document.getElementById("f1");
+var n13,nc13;
+nc13=/^[0-9a-zA-Z._ ]+\@[a-zA-Z]+\.[a-zA-Z.]{2,6}$/;
+n13=document.getElementById("f3");
+var n14,nc14;
+nc14=/^[0-9]{10,10}$/;
+n14=document.getElementById("f4");
+
+if(n11.value.match(nc11)  )
+
+{
+if(n13.value.match(nc13))
+{
+ if(n14.value.match(nc14))
+{
+var name,amt=0,slct;
+name=document.getElementById("f1").value;
+slct=document.getElementById("s1").value;
+if(slct=='o2')
+{
+amt=1000;
+}
+else if(slct=='o3')
+{
+amt=1500;
+}
+else if(slct=='o4')
+{
+amt=2000;
+}
+else if(slct=='o5')
+{
+amt=2500;
+}
+else if(slct=='o6')
+{
+amt=3000;
+}
+else if(slct=='o7')
+{
+amt=3500;
+}
+else if(slct=='o8')
+{
+amt=4000;
+}
+document.getElementById("ans").value="Dear "+name+" \n your estimated bill details-\n\n";
+document.getElementById("ans").value+="Total payable amount= Rs."+amt;
+
+}
+else
+{
+alert("invalid phone no")
+}
+}
+else
+{
+alert("Invalid Email-ID")
+}
+}
+else
+{
+alert("Invalid name")
+}
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<img src="slide1.jpg" id="img" width="100%" height="280px">
+</div>
+<a href="index.html"><div id="d2">
+Home
+</div></a>
+<a href="facilities.html"><div id="d3">
+Facilities
+</div></a>
+<a href="services.html"><div id="d4">
+Services
+</div></a>
+<a href="tips.html"><div id="d5">
+Health Tips
+</div></a>
+<a href="consultant.html"><div id="d6">
+Consultant
+</div></a>
+<a href="contactus.html"><div id="d7">
+Contact us
+</div></a>
+<div id="d11">
+</div>
+<img src="image01.jpg" id="img1">
+<div id="d14">
+<img src="image02.jpg" width="190px" height="100px">
+<p id="pp">
+<h3>Dental & Oral Checkup</h3><font id="f">
+In  the first consultation of Oral Checkup, the teeth & gums are examined.
+             It gives a fair picture of the conditions present in the oral cavity.
+It may further involve taking other diagnostic records to diagnose the
+conditions.
+            Based on the examination & investigation, if any the treatments goes are
+identified. The conditions are explain to the client & suitable treatment plan
+is formatted.</font>
+</p>
+</div>
+<div id="d12">
+<p id="pp" align="center">Dent-O-Care Clinic| All rights reserved<br>Email: DentOCare@gmail.com</p>
+</div>
+<form action="consultant.php" method="post">
+<div id="d13">
+<p id="p11">
+<h2><u>Provide your details for appointment </u></h2>
+Full name: &nbsp &nbsp &nbsp <input type="text" name="fname" id="f1" onBlur="fun1();">
+<span id="span1" style="color:red;"></span><br><br>
+
+
+
+Age:&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="text" name="age"><br><br>
+Gender:&nbsp &nbsp
+male<input type="radio" name="gender" value="M">
+female<input type="radio" name="gender" value="F"><br><br>
+Email ID:   &nbsp &nbsp &nbsp <input type="text" id="f3" name="email" onBlur="fun3();">
+<span id="span3" style="color:red;"></span><br><br>
+
+Mobile No:  &nbsp &nbsp <input type="text" name="phone" id="f4" onBlur="fun4();">
+<span id="span4" style="color:red;"></span><br><br>
+
+Reason for appointment:<select id="s1" name="reason">
+<option value="o0" selected hidden>----------select----------</option>
+<option value="o1">Root canal treatment</option>
+<option value="o2">Cavity Fillings</option>
+<option value="o3">Mouth cleaning</option>
+<option value="o4">Crowns</option>
+<option value="o5">Smile designing</option>
+<option value="o6">Tooth splinting</option>
+<option value="o7">Implants</option>
+</select><br><br>
+<button onclick="bill();">submit</button><br><br>
+<textarea id="ans" cols="30" rows="10">
+</textarea>
+</p>
+</div>
+</form>
+</body>
+</html>
